@@ -17,7 +17,7 @@ public class FelineParameterizedTest {
         this.inputKittens = inputKittens;
         this.expectedKittens = expectedKittens;
     }
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Количество котят: input={0}, expected={1}") //добавила параметр name для большего понимания
     public static Collection<Object[]> data() { //данные для теста
         return Arrays.asList(new Object[][] {
                 {0, 0},
@@ -36,4 +36,3 @@ public class FelineParameterizedTest {
         assertEquals(expectedKittens, result);
     }
 }
-

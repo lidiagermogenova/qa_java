@@ -1,5 +1,7 @@
 .idea/
-target/
+target/*
+!target/site/
+target/site/*
 !target/site/jacoco/
 *.DS_Store
 # Compiled class file
